@@ -1,0 +1,39 @@
+body{
+    background-image: url(fondo4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.avatar{
+    display: flex;
+    position: relative;
+    top: 10%;
+    margin-top: 100px;
+    width: 70px; 
+    height: 70px; 
+    background-image: url(usuario.png);
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.salida{
+    display: flex;
+    position: relative;
+    top: 20%;
+    width: 80%; 
+    height: 70%; 
+    background-image: url(cerrar-sesion.png);
+    background-size: contain; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; 
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+p{
+  color: aliceblue;
+}
+.total{
+    float:left;
+    width: 1300px;
+    height: 90px;
+    border: rgb(255, 255, 255)  1px solid;
+}
