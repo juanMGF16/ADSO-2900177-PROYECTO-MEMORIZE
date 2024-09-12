@@ -1,0 +1,64 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background: url('../img/perfil.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.text{
+    color: aliceblue;
+    margin-bottom: 25px;
+    font-size: 12px;
+    margin-top: -39px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+}
+.logo {
+    width: 19%;
+    left: 39%;
+    position: relative;
+    bottom: 55px;
+    animation: moveLogoVertical 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveLogoVertical {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(25px); }
+}
+
+#loading-bar {
+    width: 0;
+    height: 30px;
+    background-color: #000000;
+    border-radius: 20px;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+#containere {
+    width: 70%;
+    height: 30px;
+    background-color: rgba(247, 247, 247, 0.637);
+    border-radius: 20px;
+}
+.center{
+    margin-top: 200px;
+
+}
+.letra1{
+    font-family: 'pixel';
+    font-size: 180%; 
+    position:relative;
+    color: #ffffff;
+    left: 358px;
+    right: 50px;
+    bottom: 75px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}

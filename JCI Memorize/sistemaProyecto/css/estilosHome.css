@@ -1,0 +1,120 @@
+body{
+    background-image: url(../img/NuevosFondos1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.posicion{
+    text-align: center;
+
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+}
+.salida img{
+    width: 75px;
+    height: 75px;
+}
+.cerrar img{
+    width: 60px;
+    height: 65px;
+}
+
+p{
+  color: aliceblue;
+  font-family: Jockey One;
+}
+.total{
+    float:left;
+    width: 1300px;
+    height: 90px;
+}
+.cambio{
+    height: 201px;
+}
+.letra p{
+   font-family: Jockey One;
+   color: white;
+   text-align: center;
+   padding-top: 30px;
+   font-size: 28px;
+}
+.memoryze img{
+    width: 185px;
+    height: 185px;
+    text-align: center;
+}
+.memoryze{
+    align-items: center;
+    text-align: center;
+}
+button{
+    width: 220px;
+    background-color: rgba(181, 47, 215, 0.79) !important;
+    font-family:  arial black  !important;
+    text-align: center !important;
+    left: 90px;
+    border-color: rgba(181, 47, 215, 0.79) !important;
+ }
+.buttonSolitario{
+    margin-left: 110px;
+    
+ }
+
+.buttonAmigos{
+    width: 220px;
+    font-family:  Jockey One  !important;
+    font-family:  arial black  !important;
+    margin-left: 50px;
+}
+.buttonTutorial{
+    width: 220px;
+    font-family:  Jockey One  !important;
+    font-family:  arial black  !important;
+} 
+
+.Categoria img{
+    margin-top: 65px !important;
+    margin-left: 170px !important;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+.tutorial img{
+    width: 120px;
+    height: 120px;
+    margin-left: 45px;
+    margin-top: -45px;
+}
+.amigos img{
+    width: 120px;
+    height: 120px;
+    margin-left: 95px;
+    margin-top: -45px;
+    border-radius: 10px;
+}
+.solitario img{
+    width: 120px;
+    height: 120px;
+    margin-left: 160px;
+    margin-top: -45px;
+    border-radius: 10px;
+}
+.capa{
+    /* border: 1px solid rgb(255, 255, 255); */
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 550px;
+    margin-top: 45px;
+    /* margin-bottom: 17px; */
+    padding: 30px;
+}
+.btn{
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: blueviolet;
+    border-color: blueviolet;
+}

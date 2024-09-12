@@ -1,0 +1,80 @@
+body{
+    font-family: 'Open Sans' , sans-serif;
+    background-image: url(../img/Designer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow-y: hidden;
+    min-height: 100vh;
+}
+
+.capa{
+    background-color: rgba(0, 0, 0, 0.767);
+    width: 720px;
+    height: 450px;
+    position: absolute;
+    top: 16%; 
+    left: 23%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+}
+
+.text{
+    color: rgb(255, 252, 252);
+    margin-bottom: 23px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 34px;
+}
+
+.casa2 img{
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 18%;
+    left: 39%;
+    margin-bottom: auto;
+}
+.casa1 img{
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    top: 80%;
+    left: 4%;
+    margin-bottom: auto;
+}
+.campo{
+    height: 50px;
+    width: 259px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgb(124, 22, 92);
+    position:absolute;
+    bottom:170px;
+    right: 240px;
+}
+.campo1{
+    height: 50px;
+    width: 320px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgb(124, 22, 92);
+    position:absolute;
+    bottom:101px;
+    right:209px;
+}
+.text1{
+    color: rgb(255, 255, 255);
+    margin-bottom: 23px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 6px;
+    margin-top: -10px;
+}
+.botonMenu {
+    background-color: transparent;
+    border: none;
+  }
