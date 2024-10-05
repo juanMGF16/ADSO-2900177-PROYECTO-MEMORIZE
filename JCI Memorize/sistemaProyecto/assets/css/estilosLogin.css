@@ -1,0 +1,58 @@
+body{
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.capa{
+    width: 350px;
+    height: 370px;
+    padding: 20px;
+    /* text-align: center; */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.815);
+    margin-top: 35%;
+}
+h4{
+    color: blueviolet;
+    font-size: 20px;
+}
+label{
+    color: white;
+    font-size: 18px;
+    /* padding: 10px; */
+}
+.texto{
+    color: white;
+    font-size: 18px;
+    margin-top: 6px;
+}
+.texto a{
+    color: blueviolet;
+}
+.btn{
+    background-color: rgba(181, 47, 215, 0.79);
+    border-color: rgba(181, 47, 215, 0.79);
+
+}
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: rgba(181, 47, 215, 0.79);
+    border-color: rgba(181, 47, 215, 0.79);
+}
+.forma{
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    /* text-align: center; */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.815);
+    margin-top: 15%;
+    margin-left: 20%;
+}
+.boton{
+    text-align: center;
+}
+.encabeza{
+    padding: 10px;
+}

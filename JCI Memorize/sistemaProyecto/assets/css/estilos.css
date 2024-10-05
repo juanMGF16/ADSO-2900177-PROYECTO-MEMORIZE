@@ -1,0 +1,45 @@
+:root{
+    --btn-primary: #8a2be2;
+}
+body{
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2{
+    color: #8a2be2;
+}
+a{
+    color: blueviolet;
+}
+p{
+    color: white;
+}
+.texto{
+    text-align: center;
+    align-items: center;
+    margin-bottom: -50px;
+}
+.titulo{
+    text-align: center;
+    margin-top: 50px;
+}
+.logo{
+    text-align: center;
+    margin-top: -30px;
+}
+.logo img{
+    width: 400px;
+    height: 400px;
+}
+.fondo{
+    background-color: #57134b5d;
+    /* width: 300px; */
+}
+label{
+    color: white;
+}
+.btn-primary{
+    background-color: var(--btn-primary);
+}

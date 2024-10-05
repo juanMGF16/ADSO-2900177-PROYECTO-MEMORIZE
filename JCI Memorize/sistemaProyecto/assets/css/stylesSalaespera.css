@@ -1,0 +1,169 @@
+body{
+    font-family: 'Open Sans' , sans-serif;
+    background-image: url(../img/Designer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow-y: hidden;
+    min-height: 100vh;
+}
+.capa{
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.89); 
+
+    overflow: hidden;
+}
+.text{
+    color: rgb(248, 248, 248);
+    display: flex; 
+    justify-content: center; 
+    position: fixed; 
+    top: 60px;
+    width: 100%; 
+    height: 100%; 
+}
+.text2{
+    color: rgb(248, 248, 248);
+    text-align: center;
+    padding: 6px;
+}
+.text1{
+    color: rgb(248, 248, 248);
+    display: flex; 
+    justify-content: center; 
+    position: fixed; 
+    top: 140px;
+    width: 100%; 
+    height: 100%; 
+}
+.casa img{
+	height: 150px;
+    width: 150px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.casa1 img{
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: 85%;
+    left: 4%;
+    margin-bottom: auto;
+}
+.botonMenu {
+    background-color: transparent;
+    border: none;
+}
+.campo1{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:327px;
+    right:999px;
+}
+.campo{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:327px;
+    right:743px;
+}
+.campo2{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:327px;
+    right:470px;
+}
+.campo3{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:327px;
+    right:190px;
+}
+.campo4{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:250px;
+    right:874px;
+}
+.campo5{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:250px;
+    right:605px;
+}
+.campo6{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:250px;
+    right:330px;
+}
+.campo7{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:185px;
+    right:738px;
+}
+.campo8{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:185px;
+    right:465px;
+}
+.campo9{
+    height: 40px;
+    width: 159px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:120px;
+    right:600px;
+}
+.campo10{
+    height: 40px;
+    width: 190px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:35px;
+    right:50px;
+}

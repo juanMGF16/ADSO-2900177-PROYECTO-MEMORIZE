@@ -1,0 +1,108 @@
+body{
+    background-image: url(../img/NuevosFondos1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.posicion{
+    text-align: center;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+}
+.flecha img{
+    width: 60px;
+    height: 60px;
+}
+.usuario img{
+    width: 60px;
+    height: 60px;
+}
+
+p{
+  color: aliceblue;
+  font-family: Jockey One;
+}
+.total{
+    float:left;
+    width: 1300px;
+    height: 90px;
+}
+.cambio{
+    height: 201px;
+}
+.letra p{
+   font-family: Jockey One;
+   color: white;
+   text-align: center;
+   padding-top: 30px;
+   font-size: 28px;
+}
+.memoryze img{
+    margin-top: 100px;
+    width: 185px;
+    height: 185px;
+    text-align: center;
+}
+.memoryze{
+    align-items: center;
+    text-align: center;
+}
+button{
+    width: 220px;
+    font-family:  arial black  !important;
+    background-color: rgba(181, 47, 215, 0.79) !important;
+    text-align: center !important;
+    left: 90px;
+    border-color: rgba(181, 47, 215, 0.79) !important;
+ }
+.buttonNumero{
+    margin-top: 40px;
+    margin-left: 20%;
+ }
+
+.buttonLibre{
+    width: 220px;
+    font-family:  arial black  !important;
+    margin-top: 90px;
+    margin-left: 47%;
+}
+.buttonLetras{
+    margin-left: 15%;
+    margin-top: 40px;
+    width: 220px;
+    font-family:  arial black  !important;
+} 
+
+.Numeros {
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 160px;
+    height: 130px;
+}
+.Letras {
+    margin-top: 15px;
+    margin-left: 80px;
+    width: 160px;
+    height: 130px;
+}
+
+.padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.capa{
+    /* border: 1px solid rgb(255, 255, 255); */
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 550px;
+    margin-top: 45px;
+    /* margin-bottom: 17px; */
+    padding: 30px;
+}
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/estilos2.css">
+    <title>Desafío de Historias</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Selecciona un Nivel</h2>
+        <div id="level-selection">
+            <!-- Aquí se mostrarán los botones de nivel -->
+        </div>
+
+        <div id="game-area" style="display:none;">
+            <p id="story" style="display:none;"></p>
+            <img id="storyImage" src="" alt="Imagen de la historia" style="display:none;">
+            <div id="countdown" style="display:none;"></div> <!-- Añadido para la cuenta regresiva -->
+            <div id="quiz" style="display:none;">
+                <p id="question"></p>
+                <input type="text" id="answer">
+                <button id="submit">Enviar</button>
+            </div>
+            <p id="result"></p>
+            <p id="score">Puntuación: 0</p>
+        </div>
+
+    </div>
+
+    <script src="../../assets/js/main2.js"></script>
+</body>
+</html>

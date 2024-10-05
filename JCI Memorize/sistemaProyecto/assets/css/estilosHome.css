@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    background-image: url(../img/Designer\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Jockey One', sans-serif;
+    color: aliceblue;
+  }
+  
+  .capa {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+    background-color: #b52fd7;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:hover {
+    background-color: #9a24b5;
+    transform: translateY(-3px);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .avatar {
+    width: 75px;
+    height: 75px;
+  }
+  
+  .cerrar img {
+    width: 50px;
+  }
+  
+  .cerrar p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .memoryze {
+    width: 185px;
+    height: 185px;
+  }
+  
+  

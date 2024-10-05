@@ -1,0 +1,32 @@
+{
+    "1": { 
+        "text": "Había una vez un pequeño pueblo donde todos eran felices.",
+        "question": "¿Dónde vivían las personas?",
+        "answer": "pueblo",
+        "image": "../../assets/img/letras.png"
+    },
+    "2": { 
+        "text": "Un día, el pueblo fue invadido por dragones.",
+        "question": "¿Qué invadió el pueblo?",
+        "answer": "dragones",
+        "image": "images/dragones.jpg"
+    },
+    "3": { 
+        "text": "Los dragones eran muy amistosos y compartían su tesoro.",
+        "question": "¿Cómo eran los dragones?",
+        "answer": "amistosos",
+        "image": "images/amistosos.jpg"
+    },
+    "4": { 
+        "text": "Una niña encontró un mapa que conducía a un tesoro.",
+        "question": "¿Qué encontró la niña?",
+        "answer": "mapa",
+        "image": "images/mapa.jpg"
+    },
+    "5": { 
+        "text": "Los habitantes del pueblo decidieron hacer una fiesta.",
+        "question": "¿Qué decidieron hacer los habitantes?",
+        "answer": "fiesta",
+        "image": "images/fiesta.jpg"
+    }
+}
