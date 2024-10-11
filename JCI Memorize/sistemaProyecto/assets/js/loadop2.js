@@ -13,7 +13,7 @@ function simulateLoading() {
                 loadingBar.style.width = '0%'; 
                 
                 setTimeout(function() {
-                    window.location.href = 'http://localhost/sistemaProyecto/ordenar.php';
+                    window.location.href = 'http://localhost/sistemaProyecto/view/home.php';
                 }, 2000); 
             }, 2000); 
         }, 2000); 

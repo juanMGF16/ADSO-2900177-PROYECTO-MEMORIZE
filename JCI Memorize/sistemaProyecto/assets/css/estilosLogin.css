@@ -1,58 +1,84 @@
-body{
+body {
     background-image: url(../img/fondo2.jpg);
+    background-size: cover; 
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Alinea horizontalmente al centro */
+    align-items: center;      /* Alinea verticalmente al centro */
 }
-.capa{
-    width: 350px;
-    height: 370px;
+
+.forma {
+    width: 400px;
+    height: auto;  /* Elimina el alto fijo para que el contenido determine la altura */
     padding: 20px;
-    /* text-align: center; */
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.815);
-    margin-top: 35%;
+    border-radius: 10px; /* Opcional: un poco de redondeo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para un mejor efecto */
 }
-h4{
+.capa {
+    width: 350px;
+    height: auto;  /* Elimina el alto fijo para que se ajuste al contenido */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para mejor presentación */
+}
+h4 {
     color: blueviolet;
     font-size: 20px;
 }
-label{
+
+label {
     color: white;
     font-size: 18px;
-    /* padding: 10px; */
 }
-.texto{
+
+.texto {
     color: white;
     font-size: 18px;
     margin-top: 6px;
 }
-.texto a{
+
+.texto a {
     color: blueviolet;
 }
-.btn{
-    background-color: rgba(181, 47, 215, 0.79);
-    border-color: rgba(181, 47, 215, 0.79);
 
-}
-.btn:hover {
-    color: var(--bs-btn-hover-color);
+.btn {
     background-color: rgba(181, 47, 215, 0.79);
     border-color: rgba(181, 47, 215, 0.79);
 }
-.forma{
-    width: 400px;
-    height: 500px;
-    padding: 20px;
-    /* text-align: center; */
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.815);
-    margin-top: 15%;
-    margin-left: 20%;
+
+.btn:hover {
+    color: white;
+    background-color: rgba(150, 40, 180, 0.79);
+    border-color: rgba(150, 40, 180, 0.79);
 }
-.boton{
+
+.boton {
     text-align: center;
 }
-.encabeza{
-    padding: 10px;
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 576px) {
+    .forma {
+        width: 90%; /* El formulario ocupará el 90% del ancho en pantallas pequeñas */
+        margin: 10px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
 }

@@ -9,7 +9,7 @@
         public function __construct(){
             $this->server='localhost';
             $this->usuario='postgres';
-            $this->baseDatos='sistema';
+            $this->baseDatos='sistemaPro';
             $this->password='1234567';
         }
         public function conectar(){

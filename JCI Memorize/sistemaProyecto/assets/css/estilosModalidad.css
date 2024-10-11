@@ -1,108 +1,148 @@
-body{
+body {
     background-image: url(../img/NuevosFondos1.jpeg);
+    background-size: cover; 
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
-}
-.posicion{
-    text-align: center;
-}
-.avatar{
-    width: 50px;
-    height: 50px;
-}
-.flecha img{
-    width: 60px;
-    height: 60px;
-}
-.usuario img{
-    width: 60px;
-    height: 60px;
+    min-height: 100vh; 
 }
 
-p{
-  color: aliceblue;
-  font-family: Jockey One;
-}
-.total{
-    float:left;
-    width: 1300px;
-    height: 90px;
-}
-.cambio{
-    height: 201px;
-}
-.letra p{
-   font-family: Jockey One;
-   color: white;
-   text-align: center;
-   padding-top: 30px;
-   font-size: 28px;
-}
-.memoryze img{
-    margin-top: 100px;
-    width: 185px;
-    height: 185px;
-    text-align: center;
-}
-.memoryze{
-    align-items: center;
-    text-align: center;
-}
-button{
-    width: 220px;
-    font-family:  arial black  !important;
-    background-color: rgba(181, 47, 215, 0.79) !important;
-    text-align: center !important;
-    left: 90px;
-    border-color: rgba(181, 47, 215, 0.79) !important;
- }
-.buttonNumero{
-    margin-top: 40px;
-    margin-left: 20%;
- }
-
-.buttonLibre{
-    width: 220px;
-    font-family:  arial black  !important;
-    margin-top: 90px;
-    margin-left: 47%;
-}
-.buttonLetras{
-    margin-left: 15%;
-    margin-top: 40px;
-    width: 220px;
-    font-family:  arial black  !important;
-} 
-
-.Numeros {
-    margin-top: 15px;
-    margin-left: 100px;
-    width: 160px;
-    height: 130px;
-}
-.Letras {
-    margin-top: 15px;
-    margin-left: 80px;
-    width: 160px;
-    height: 130px;
-}
-
-.padre{
+.padre {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
 }
 
-.capa{
-    /* border: 1px solid rgb(255, 255, 255); */
-    background-color: rgba(0, 0, 0, 0.767);
-    height: 550px;
-    margin-top: 45px;
-    /* margin-bottom: 17px; */
-    padding: 30px;
+.capa {
+    background-color: rgba(0, 0, 0, 0.911); 
+    padding: 20px; 
+    width: 100%; 
+    height: auto;
+    max-width: 750px; 
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4); 
+    border-radius: 30px;
+}
+
+@media (max-width: 576px) {
+    .capa {
+        max-width: 90%; /* Capa más ajustada en móviles */
+    }
+
+    img.img-fluid {
+        max-width: 100px; /* Reducir el tamaño de las imágenes */
+    }
+
+    .btn {
+        padding: 10px; /* Reducir el padding de los botones en móviles */
+    }
+}
+
+
+.posicion {
+    text-align: center;
+}
+
+.avatar, .flecha img, .usuario img {
+    width: 50px;
+    height: 50px;
+}
+
+.letra p {
+    font-family: Jockey One;
+    color: white;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.memoryze img {
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+}
+
+button {
+    width: 100%; /* Todos los botones ocupan el 100% de su contenedor */
+    max-width: 220px; /* Controla el ancho máximo para que no se estiren demasiado */
+    font-family: arial black !important;
+    background-color: rgba(181, 47, 215, 0.79) !important;
+    border-color: rgba(181, 47, 215, 0.79) !important;
+    text-align: center !important;
+}
+.btn{
+    color: #fff !important;
+}
+.buttonNumero, .buttonLetras {
+    margin-top: 15px;
+}
+
+.buttonLibre {
+    width: 180px; /* Botón de abajo más ancho */
+    margin-top: 30px; /* Mayor separación hacia arriba */
+}
+
+.Numeros, .Letras {
+    width: 100px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.total {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.h5{
+    margin-top: 30px;
+}
+.enunciado {
+    margin-bottom: 20px; /* Espacio extra */
+}
+
+.nombre-usuario {
+    font-size: 1.5rem; /* Tamaño de texto más grande */
+    font-weight: bold; /* Texto más grueso */
+    color: #fff; /* Texto en blanco */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Sombra para destacar el texto */
+    border-bottom: 2px solid #fff; /* Línea debajo del texto para mayor enfoque */
+    padding-bottom: 10px; /* Separación del borde */
+}
+
+/* Pequeña animación para hacer que el texto aparezca suavemente */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.nombre-usuario {
+    animation: fadeIn 1s ease-in-out;
 }
 
 
 
+.text-center img {
+    display: block;
+    margin: 0 auto;
+    width: 200px; 
+}
+
+.text-center button {
+    margin-bottom: 20px; 
+}
+
+/* Aseguramos que en pantallas pequeñas, las imágenes mantengan su posición */
+@media (max-width: 768px) {
+    .col-12 img {
+        margin-top: 10px;
+    }
+    .col-12 button {
+        margin-bottom: 10px;
+    }
+}

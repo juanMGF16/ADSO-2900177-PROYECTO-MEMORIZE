@@ -4,30 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/estilos2.css">
-    <title>Desafío de Historias</title>
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.css">
+    <title>Niveles</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Selecciona un Nivel</h2>
-        <div id="level-selection">
-            <!-- Aquí se mostrarán los botones de nivel -->
-        </div>
 
-        <div id="game-area" style="display:none;">
-            <p id="story" style="display:none;"></p>
-            <img id="storyImage" src="" alt="Imagen de la historia" style="display:none;">
-            <div id="countdown" style="display:none;"></div> <!-- Añadido para la cuenta regresiva -->
-            <div id="quiz" style="display:none;">
-                <p id="question"></p>
-                <input type="text" id="answer">
-                <button id="submit">Enviar</button>
+    <!-- Contenedor con la clase hero para que cubra toda la pantalla -->
+    <div class="hero">
+        <div class="container">
+            <!-- Área de juego -->
+            <!-- Área de juego con capa contenedora -->
+<!-- Área de juego con capa contenedora -->
+            <div id="game-area" class="game-container my-5" style="display: none;">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 text-center">
+                        <p id="countdown" style="display:none;" class="text-danger countdown-timer"></p>
+                        <div class="row">
+                            <div class="col-md-6 juego p-3 text-center story-box">
+                                <p id="story" style="display:none;" class="mb-4"></p>
+                            </div>
+                            <div class="col-md-6 juego p-3 text-center image-box">
+                                <img id="storyImage" style="display:none; height: 240px;" alt="Imagen de la historia" class="img-fluid mb-4" />
+                            </div>
+                        </div>
+                        <div id="quiz" style="display:none;" class="quiz-container">
+                            <p id="question"></p>
+                            <input type="text" id="answer" class="form-control mb-3 answer-box">
+                            <button id="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                        <p id="result" class="mt-4"></p>
+                        <p id="score" class="mt-2">Puntuación: 0</p>
+                        <button id="backToLevels" class="btn btn-secondary mt-4">Volver a niveles</button>
+                    </div>
+                </div>
             </div>
-            <p id="result"></p>
-            <p id="score">Puntuación: 0</p>
-        </div>
 
+
+
+            <div class="dark-layer">
+                <div id="level-selection" class="mt-5 ">
+                    <div class="row mb-4">
+                        <div class="col-6 d-flex justify-content-start align-items-center">
+                            <a href="../home.php">
+                                <img src="../../assets/img/MEMORIZE-removebg-preview.png" alt="Logo"  style="width: 130px;">
+                            </a>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <a href="../categorias/modalidadJ.php">
+                                <img src="../../assets/img/flecha-hacia-atras 2.png" alt="Regresar" class="width: 130px;">
+                            </a>
+                        </div>
+                    </div>
+                    <h2 class="text-center">Niveles</h2>
+                    <div class="levels-container">
+                        <!-- Los niveles se organizan en columnas usando Flexbox -->
+                        <div class="level p-3 text-center border rounded" data-level="1">Nivel <br> 1</div>
+                        <div class="level p-3 text-center border rounded locked" data-level="2">Nivel <br> <br> 2</div>
+                        <div class="level p-3 text-center border rounded locked" data-level="3">Nivel <br> 3</div>
+                        <div class="level p-3 text-center border rounded locked" data-level="4">Nivel <br> 4</div>
+                        <div class="level p-3 text-center border rounded locked" data-level="5">Nivel <br> 5</div>
+                        <div class="level p-3 text-center border rounded locked" data-level="6">Nivel <br> 6</div>
+                        <div class="level p-3 text-center border rounded locked" data-level="7">Nivel <br> 7</div>
+                        <div class="level p-3 text-center border rounded locked" data-level="8">Nivel <br> 8</div>
+                        <div class="level p-3 text-center border rounded locked" data-level="9">Nivel <br> 9</div>
+                        <div class="level p-3 text-center border rounded locked" data-level="10">Nivel <br> 10</div>
+                    </div>
+                    
+    
+                </div>
+            </div>
+            
+        </div>
     </div>
 
+    <!-- Script principal -->
     <script src="../../assets/js/main2.js"></script>
+
 </body>
 </html>

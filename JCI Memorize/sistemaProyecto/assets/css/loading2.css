@@ -5,25 +5,23 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    background: url('../img/perfil.jpg');
+    background: url('../img/perfil.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden; /* Evitar desplazamientos de la página */
 }
 
 .text {
     color: aliceblue;
-    margin-bottom: 25px;
-    font-size: 12px;
-    margin-top: -39px;
-    letter-spacing: 2px;
+    font-size: 14px; /* Tamaño de fuente más legible */
+    margin-top: -20px;
+    letter-spacing: 1px;
     font-weight: bold;
+    text-align: center;
 }
 
 .logo {
-    width: 19%;
-    left: 39%;
+    width: 150px; /* Hacemos el logo responsivo con una medida fija */
     position: relative;
     bottom: 55px;
     animation: moveLogoVertical 2s infinite alternate ease-in-out;
@@ -35,37 +33,38 @@ body {
 }
 
 #containere {
-    width: 70%;
+    width: 80%; /* Ajustado para pantallas más pequeñas */
+    max-width: 400px; /* Máximo ancho */
     height: 30px;
-    background-color: rgba(247, 247, 247, 0.637);
+    background-color: rgba(247, 247, 247, 0.8);
     border-radius: 20px;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 #loading-bar {
     height: 100%;
-    background-color: #00ff00; 
+    background-color: #00ff00;
     border-radius: 20px;
-    transition: width 2s ease-in, background-color 2s ease-in; 
-    left: 0;
-    width: 100%; 
+    transition: width 2s ease-in, background-color 2s ease-in;
+    width: 100%;
     transform-origin: left;
 }
 
 .center {
-    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .letra1 {
-    font-family: 'pixel';
-    font-size: 180%;
-    position: relative;
+    font-size: 1.8rem;
     color: #ffffff;
-    left: 358px;
-    right: 50px;
-    bottom: 75px;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'pixel', sans-serif; /* Asegúrate de que la fuente esté disponible */
 }
-
-

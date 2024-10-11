@@ -1,40 +1,82 @@
-/* Estilos para la página de perfil */
 body {
-    background-image: url('../img/Designer\(2\).jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  .perfil-capa {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    border-radius: 15px;
-    padding: 20px;
-  }
-  
-  .perfil-avatar {
-    width: 150px;
-    height: 150px;
-    border: 3px solid white;
-  }
-  
-  .avatar-opcion {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  
-  .avatar-opcion:hover {
-    transform: scale(1.1);
-  }
-  
-  input[type="file"] {
-    margin-top: 10px;
-  }
-  
-  h1, h3 {
-    color: white;
-  }
-  
+  background-image: url(../img/Designer\ \(2\).jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.capa {
+  background-color: rgba(0, 0, 0, 0.767);
+  height: auto; 
+  width: 80%; 
+  max-width: 600px; 
+  padding: 30px;
+  border-radius: 6%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.avatar-seleccionado {
+  border: 5px solid black; 
+}
+
+.table {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 0.85rem;
+  border-collapse: collapse; 
+  border-radius: 10px !important;
+}
+
+.table th, .table td {
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid #fff; 
+}
+
+.table th {
+  background-color: #007bff; 
+  color: white; 
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.perfil-avatar {
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid white;
+}
+
+
+.avatar-opcion {
+  width: 80px; 
+  height: 80px; 
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+h1, h3 {
+ color: white;
+}

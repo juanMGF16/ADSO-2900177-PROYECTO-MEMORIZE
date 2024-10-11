@@ -1,19 +1,33 @@
 <?php
 session_start();
-include 'conexion.php'; // Archivo de conexión a la base de datos
+include('conexion.php');
 
-$usuario_id = $_SESSION['usuario_id']; // Obtener el ID del usuario de la sesión
-$data = json_decode(file_get_contents('php://input'), true);
+$conexion = new conexion();
 
-$nivel_actual = $data['nivel_actual'];
-$nivel_desbloqueado = $data['nivel_desbloqueado'];
+// Verificar si se recibieron los datos necesarios
+if (isset($_POST['maxLevelReached']) && isset($_POST['score'])) {
+    $maxLevelReached = $_POST['maxLevelReached'];
+    $score = $_POST['score'];
+    $personaId = $_SESSION['personaId']; // Suponiendo que el ID de la persona está almacenado en la sesión
 
-// Actualizar el progreso del usuario
-$query = "UPDATE progreso_niveles SET nivel_actual = ?, nivel_desbloqueado = ? WHERE usuario_id = ?";
-$stmt = $conn->prepare($query);
-$stmt->bind_param("iii", $nivel_actual, $nivel_desbloqueado, $usuario_id);
-$stmt->execute();
+    // Consulta SQL para actualizar el progreso del jugador
+    $sqlUpdate = "UPDATE persona SET max_level = :maxLevelReached, score = :score WHERE personaId = :personaId";
+    
+    // Valores a pasar a la consulta
+    $values = array(
+        ':maxLevelReached' => $maxLevelReached,
+        ':score' => $score,
+        ':personaId' => $personaId
+    );
 
-$response = array('status' => 'success');
-echo json_encode($response);
+    try {
+        // Ejecutar la consulta
+        $conexion->ejecutar($sqlUpdate, $values);
+        echo json_encode(array("success" => true, "message" => "Progreso guardado correctamente."));
+    } catch (Exception $e) {
+        echo json_encode(array("success" => false, "message" => "Error al guardar el progreso: " . $e->getMessage()));
+    }
+} else {
+    echo json_encode(array("success" => false, "message" => "Datos incompletos."));
+}
 ?>

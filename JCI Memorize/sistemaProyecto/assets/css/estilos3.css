@@ -1,0 +1,173 @@
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; 
+}
+
+.avatar img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.letra p {
+    font-family: Jockey One;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.5rem;
+}
+
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.capa {
+    background-color: rgba(0, 0, 0, 0.767);
+    width: 90vw; 
+    max-width: 600px; 
+    padding: 2%;
+    border-radius: 5%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.JuegoImagen img {
+    width: 50%; 
+    height: auto;
+    border-radius: 8%;  
+}
+.JuegoImagen1 img {
+    width: 50%; 
+    height: auto;
+    border-radius: 8%;  
+    margin-left: 25%;
+}
+/* Barra de carga */
+#containere {
+    width: 85%;
+    height: 30px;
+    background-color: rgba(247, 247, 247, 0.637);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-bar2 {
+    height: 100%;
+    background-color: #00ff00;
+    border-radius: 20px;
+    transition: width 2s ease-in-out, background-color 1s ease-in-out;
+    width: 100%;
+    transform-origin: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+ 
+    .capa {
+        width: 90vw; 
+        padding: 5%;
+    }
+
+    .avatar img, .logo img {
+        margin-left: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .letra p {
+        font-size: 22px; 
+    }
+
+    .JuegoImagen img {
+        margin-left: 0;
+        width: 60%;
+        height: auto;
+    }
+
+    .totalBotones {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .letra1 {
+        font-size: 120%;
+        left: 80px;
+        right: 30px;
+        bottom: 50px;
+    }
+
+   
+    #containere {
+        width: 100%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+  
+    .capa {
+        width: 95vw;
+        padding: 4%;
+    }
+
+    .avatar img{
+        width: 50px;
+        height: 50px;
+    }
+    .logo img{
+        width: 70px;
+    }
+
+    .letra p {
+        font-size: 18px; /
+    }
+
+    .JuegoImagen img {
+        width: 80%; 
+    }
+
+    .loading-bar2 {
+        width: 80%; 
+    }
+
+    .letra1 {
+        font-size: 100%;
+        left: 50px;
+        right: 20px;
+        bottom: 30px;
+    }
+}

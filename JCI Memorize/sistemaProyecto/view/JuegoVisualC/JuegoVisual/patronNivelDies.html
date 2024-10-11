@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego</title>
+    <link rel="stylesheet" href="../../../assets/css/estilosNiv.css" />
+    <link rel="stylesheet" href="../../../../bootstrap/css/bootstrap.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="padre">
+            <div class="capa">
+
+                <!-- Encabezado -->
+                <div class="row text-center mb-4 total">
+                    <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
+                        <div class="avatar">
+                            <img src="../../../assets/img/LogoUsuario.png" alt="Logo Usuario" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="letra">
+                            <p>Selecciona la opción que creas correcta</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
+                        <div class="logo">
+                            <img src="../../../assets/img/NuevoLogo.png" alt="Nuevo Logo" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Opciones de juego -->
+                <div class="row JuegoImagen1 mb-4">
+                    <div class="col-12 col-md-4 text-center d-flex justify-content-center align-items-center">
+                        <img src="../../../assets/img/nivel10.1.jpg" alt="Opción 1" class="opcion10 img-fluid" data-correcta="false" style="cursor: pointer;" onclick="seleccionarDiez(this)">
+                    </div>
+                    <div class="col-12 col-md-4 text-center d-flex justify-content-center align-items-center">
+                        <img src="../../../assets/img/nivel10.jpeg" alt="Opción 2" class="opcion10 img-fluid" data-correcta="true" style="cursor: pointer;" onclick="seleccionarDiez(this)">
+                    </div>
+                    <div class="col-12 col-md-4 text-center d-flex justify-content-center align-items-center">
+                        <img src="../../../assets/img/nivel10.2.jpg" alt="Opción 3" class="opcion10 img-fluid" data-correcta="false" style="cursor: pointer;" onclick="seleccionarDiez(this)">
+                    </div>
+                </div>
+
+                <!-- Botón de validación -->
+                <div class="text-center">
+                    <button id="validarBtn" class="btn btn-primary" onclick="validarOpcionDiez()">Validar Opción</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../../bootstrap/js/bootstrap.js"></script>
+    <script src="../../../assets/js/validarJuegoImagenUno.js"></script>
+</body>
+
+</html>

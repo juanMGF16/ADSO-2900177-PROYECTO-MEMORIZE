@@ -1,22 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+  // Función para desordenar los números (mezclar)
   function shuffleArray(array) {
-    for (let iteracion = array.length - 1; iteracion > 0; iteracion--) {
-      const jugar = Math.floor(Math.random() * (iteracion + 1));
-      [array[iteracion], array[jugar]] = [array[jugar], array[iteracion]];
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
   }
 
+  // Obtener los números almacenados en el localStorage
   function getStoredNumbers() {
     return [
-      localStorage.getItem('numero1'),
-      localStorage.getItem('numero2'),
-      localStorage.getItem('numero3'),
-      localStorage.getItem('numero4'),
-      localStorage.getItem('numero5')
+      '1', '2', '3', '4', '5' // Puedes ajustar estos números como sea necesario.
     ];
   }
 
+  // Inicializar el plugin SortableJS
   function initializeSortable() {
     Sortable.create(document.getElementById('lista2'), {
       animation: 150,
@@ -24,31 +23,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Función para verificar el orden de los números
   function checkOrder() {
     const elements = document.querySelectorAll('#lista2 .cuadro2 h4');
     const currentOrder = Array.from(elements).map(el => el.textContent.trim());
     const originalOrder = getStoredNumbers();
 
-    let resultMessage = 'El orden es incorrecto.\n\n';
-    let correctPositions = [];
-    let incorrectPositions = [];
+    let allCorrect = true;
 
-    originalOrder.forEach((num, index) => {
-      if (currentOrder[index] === num) {
-        correctPositions.push(`Número ${num} está en el orden correcto en la posición ${index + 1}`);
+    elements.forEach((el, index) => {
+      el.parentElement.classList.remove('incorrecto', 'correcto'); // Limpiar clases previas
+
+      if (currentOrder[index] === originalOrder[index]) {
+        el.parentElement.classList.add('correcto'); // Añadir clase si está correcto
       } else {
-        incorrectPositions.push(`Número ${num} está en la posición incorrecta`);
+        el.parentElement.classList.add('incorrecto'); // Añadir clase si está incorrecto
+        allCorrect = false;
       }
     });
 
-    if (correctPositions.length === originalOrder.length) {
-      resultMessage = '¡Los números están en el orden correcto!';
-      window.location.href = 'http://localhost/sistemaProyecto/niveles.php';
+    if (allCorrect) {
+      alert('¡Los números están en el orden correcto!');
+      // Redirigir o hacer algo más si todos son correctos
+      // window.location.href = 'http://localhost/sistemaProyecto/niveles.php'; // Redirigir si se desea
     } else {
-      resultMessage += correctPositions.join('\n') + '\n' + incorrectPositions.join('\n');
+      alert('El orden es incorrecto. Revisa los números en rojo.');
     }
-
-    alert(resultMessage);
   }
 
   // Desorganizar números y mostrarlos
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('botones').innerHTML = botones;
 
-  // Inicializar Sortable
+  // Inicializar SortableJS para que los números se puedan reordenar
   initializeSortable();
 
   // Añadir evento al botón de verificar orden

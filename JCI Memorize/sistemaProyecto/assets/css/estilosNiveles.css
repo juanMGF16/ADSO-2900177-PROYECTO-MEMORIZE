@@ -1,121 +1,253 @@
-body{
+body {
     background-image: url(../img/NuevosFondos1.jpeg);
+    background-size: cover; 
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh; 
 }
-.posicion{
+
+.posicion {
     text-align: center;
 }
 
-.salida img{
-    width: 85px;
-    height: 85px;
+.avatar img {
+    width: 70px;
+    height: 70px;
 }
-.cerrar img{
-    width: 105px;
-    height: 105px;
+.home img {
+    width: 70px;
+    height: 70px;
 }
 
-p{
-  color: aliceblue;
-  font-family: Jockey One;
+.logo img {
+    width: 100px;
+    height: 100px;
 }
-.total{
-    float:left;
-    width: 1300px;
-    height: 90px;
+
+
+p {
+    color: aliceblue;
+    font-family: Jockey One;
 }
-.cambio{
-    height: 201px;
+
+.total {
+    width: 100%;
+    height: auto;
 }
-.letra p{
-   font-family: Jockey One;
-   color: white;
-   text-align: center;
-   padding-top: 30px;
-   font-size: 28px;
-}
-.memoryze img{
-    width: 185px;
-    height: 185px;
+
+.letra p {
+    font-family: Jockey One;
+    color: white;
     text-align: center;
+    font-size: 28px;
 }
-.memoryze{
-    align-items: center;
-    text-align: center;
-}
-button{
-    width: 18%;
-    height: 60px;
+
+button {
     background-color: rgba(181, 47, 215, 0.79) !important;
-    font-family:  arial black  !important;
+    font-family: Arial Black !important;
     border-color: rgba(181, 47, 215, 0.79) !important;
+    width: 100px; 
+    height: 100px;
 }
-.button1{
-    margin-left: 78%;
+
+.fixed-btn {
+    margin: 10px; 
 }
-.button2{
-    margin-left: 8%;
+
+.candado {
+    width: 20px;
+    height: 25px;
 }
-.button3{
-    margin-left: 17%;
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
 }
-.button4{
-    margin-left: 17%;
-}
-.button5{
-    margin-left: 10%;
-}
-.button6{
-    margin-top: 18px;
-    margin-left: 77%;
-}
-.button7{
-    margin-top: 18px;
-    margin-left: 8%;
-}
-.button8{
-    margin-top: 18px;
-    margin-left: 17%;
-}
-.button9{
-    margin-top: 18px;
-    margin-left: 17%;
-}
-.button10{
-    margin-top: 18px;
-    margin-left: 10%;
-}
-.Categoria img{
-    margin-top: 65px !important;
-    margin-left: 170px !important;
-    width: 120px;
-    height: 120px;
-    border-radius: 10px;
-}
-.candado{
-    width: 32px;
-    height: 40px;
-}
-.imagenCasa{
+
+.imagenCasa {
     margin-left: 6px;
     width: 60px;
     height: 60px;
 }
-.padre{
+
+.padre {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.capa{
-    /* border: 1px solid rgb(255, 255, 255); */
+
+.capa {
     background-color: rgba(0, 0, 0, 0.767);
-    height: 550px;
-    width: 100%;
-    margin-top: 45px;
-    /* margin-1bottom: 17px; */
+    height: auto; 
+    width: 80%; 
     padding: 30px;
+    border-radius: 6%;
+}
+
+@media (max-width: 1199px) {
+    button {
+        width: 80px; 
+        height: 80px; 
+    }
+}
+
+@media (max-width: 991px) {
+    button {
+        width: 70px; 
+        height: 70px;
+    }  
+      .avatar img {
+        width: 60px;
+        height: 60px;
+        margin-top: -200%;
+        margin-left: -80%;
+    }
+    
+    .logo img {
+        width: 80px;
+        height: 80px;
+        margin-top: -150%;
+        margin-left: 70%;
+    }
+    .home img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .avatar img {
+        width: 40px;
+        height: 40px;
+        margin-left: -800%;
+        margin-top: -50%;
+    }
+    
+    .logo img {
+        width: 60px;
+        height: 60px;
+        margin-left: 300%;
+        margin-top: -450%;
+    }
+
+    button {
+        width: 50px;
+        height: 50px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .candado {
+        width: 15px; 
+        height: 20px;
+    }
+}
+@media (max-width: 500px) {
+
+    .avatar img {
+        width: 50px;
+        height: 50px;
+        margin-left: -520%;
+        margin-top: -50%;
+    }
+    .letra p {
+        font-size: 23px;
+       padding: 8%;
+    }
+    .logo img {
+        width: 70px;
+        height: 70px;
+        margin-left: 220%;
+        margin-top: -480%;
+    }
 
 }
+
+
+@media (max-width: 414px) {
+
+    .avatar img {
+        width: 40px;
+        height: 40px;
+        margin-left: -500%;
+        margin-top: -50%;
+    }
+    
+    .logo img {
+        width: 60px;
+        height: 60px;
+        margin-left: 220%;
+        margin-top: -550%;
+    }
+    .letra p {
+        font-size: 23px;
+       padding: 8%;
+    }
+.home img {
+    width: 90px;
+    height: 40px;
+}
+
+
+}
+@media (max-width: 430px) {
+
+    .avatar img {
+        margin-left: -420%;
+        margin-top: -30%;
+    }
+    
+    .logo img {
+        margin-left: 190%;
+        margin-top: -440%;
+    }
+
+    .letra p {
+        font-size: 20px;
+       padding: 8%;
+    }
+    .home img {
+        width: 900px;
+        height: 30px;
+    }
+    
+
+}
+@media (max-width: 390px) {
+    
+    .logo img {
+        margin-left: 200%;
+        margin-top: -590%;
+    }
+    .letra p {
+        font-size: 23px;
+    }
+    .home img {
+        width: 120%;
+        height: 30px;
+    }
+
+}
+@media (max-width: 360px) { 
+    .logo img {
+        margin-left: 180%;
+        margin-top: -620%;
+    }
+    .home img {
+        width: 120%;
+        height: 30px;
+    }
+
+}
+@media (max-width: 375px) { 
+    .home img {
+        width: 70px !important;
+        height: 30px;
+    }
+    
+}
+

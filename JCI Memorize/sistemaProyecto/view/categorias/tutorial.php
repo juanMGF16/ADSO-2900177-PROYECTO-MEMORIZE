@@ -14,9 +14,9 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylesTutorial.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="../../assets/css/stylesTutorial.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <script src="../../assets/js/main.js"></script>
     <title>Tutorial</title>
 </head>
 
@@ -28,7 +28,7 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
             <div class="col-6">
                 <div class="casa2">
                     <button type="button" class="botonMenu">
-                        <img src="img/logo1.jpg" alt="">
+                        <img src="../../assets/img/logo1.jpg" alt="">
 
                     </button>
 
@@ -37,9 +37,9 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
 
             <div class="col-6 d-flex justify-content-end">
                 <div class="casa">
-                   <a href="home.php">
+                   <a href="../home.php">
                         <button type="button" class="botonMenu">
-                            <img src="img/casa.png" alt="">
+                            <img src="../../assets/img/casa.png" alt="">
                         </button>
                    </a>
                 </div>
@@ -52,18 +52,18 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
             <button class="btn" type="submit" >Letra O</button>
         </div> -->
         <a href="#" id="btn1">Categoria
-            <img src="img/niña.jpg" alt="" width="35" height="29" class="d-inline-block align-text-top">
+            <img src="../../assets/img/niña.jpg" alt="" width="35" height="29" class="d-inline-block align-text-top">
 
         </a>
         <a href="#" id="btn2">Niveles
-            <img src="img/niño.jpg" alt="" width="35" height="29" class="d-inline-block align-text-top">
+            <img src="../../assets/img/niño.jpg" alt="" width="35" height="29" class="d-inline-block align-text-top">
 
         </a>
         <a href="#" id="btn3">Perfil
-            <img src="img/niñojuega.jpg" alt="" width="35" height="30" class="d-inline-block align-text-top">
+            <img src="../../assets/img/niñojuega.jpg" alt="" width="35" height="30" class="d-inline-block align-text-top">
         </a>
         <a href="#" id="btn4">Modo de juego
-            <img src="img/niños (1).jpg" alt="" width="35" height="29" class="d-inline-block align-text-top">
+            <img src="../../assets/img/niños (1).jpg" alt="" width="35" height="29" class="d-inline-block align-text-top">
         </a>
         <div class="animation start-home">
 
@@ -81,7 +81,7 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
                         </div>
                         <div class="col-6 numero-letras"></div>
                         <div class=" numero-letras d-flex justify-content-center">
-                            <img src="img/numero.jpg" alt="">
+                            <img src="../../assets/img/numero.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
 
                         </div>
                         <div class="numero-letras d-flex justify-content-center">
-                            <img src="img/letras.jpg" alt="">
+                            <img src="../../assets/img/letras.jpg" alt="">
                         </div>
 
 
@@ -132,7 +132,7 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
                         <div class="col-4"></div>
 
                         <div class=" numero-letras d-flex justify-content-center">
-                            <img src="img/niña.jpg" alt="">
+                            <img src="../../assets/img/niña.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
 
                         </div>
                         <div class="numero-letras d-flex justify-content-center">
-                            <img src="img/niños (1).jpg" alt="">
+                            <img src="../../assets/img/niños (1).jpg" alt="">
                         </div>
 
 
@@ -166,7 +166,7 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
 
                         </div>
                         <div class="numero-letras d-flex justify-content-center">
-                            <img src="img/niñojuega.jpg" alt="">
+                            <img src="../../assets/img/niñojuega.jpg" alt="">
                         </div>
 
 
@@ -200,7 +200,7 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
 
                         </div>
                         <div class="numero-letras d-flex justify-content-center">
-                            <img src="img/perfil.png" alt="">
+                            <img src="../../assets/img/perfil.png" alt="">
                         </div>
 
 
@@ -230,7 +230,7 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
                         </div>
                         <div class="col-6 numero-letras"></div>
                         <div class=" numero-letras d-flex justify-content-center">
-                            <img src="img/niño.jpg" alt="">
+                            <img src="../../assets/img/niño.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -247,7 +247,7 @@ $nombreUsuario = htmlspecialchars($_SESSION['personaNombre']);
 
                         </div>
                         <div class="numero-letras d-flex justify-content-center">
-                            <img src="img/niña.jpg" alt="">
+                            <img src="../../assets/img/niña.jpg" alt="">
                         </div>
 
 

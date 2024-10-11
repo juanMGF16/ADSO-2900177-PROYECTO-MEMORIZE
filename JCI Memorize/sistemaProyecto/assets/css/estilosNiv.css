@@ -1,149 +1,105 @@
-body{
+body {
     background-image: url(../img/fondo.jpg);
+    background-size: cover; 
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh; 
 }
 
+.avatar img {
+    width: 50px;
+    height: 50px;
+}
 
-.avatar img{
-    margin-left: -15%;
-    margin-top: 10%;
+.logo img {
     width: 80px;
-    height: 75px;
-}
-.logo img{
-    margin-left: 55%;
-    width: 120px;
-    height: 120px;
+    height: 80px;
 }
 
-.boton{
-    background-color: #8a2be2 !important;
-    border-color: #8a2be2 !important;
-    color: #fff;
-    text-align: center !important;
-}
-p{
-  color: aliceblue;
-  font-family: Jockey One;
+.letra p {
+    font-family: Jockey One;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.5rem; 
 }
 
-.totalBotones{
-    width: 1300px;
-    height: 90px;
-    justify-content: center;
-    align-items: center;
-}
-.cambio{
-    height: 201px;
-}
-.letra p{
-   font-family: Jockey One;
-   color: white;
-   text-align: center;
-   padding-top: 30px;
-   font-size: 28px;
-}
-
-.padre{
+.padre {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.capa{
-    /* border: 1px solid rgb(255, 255, 255); */
+.capa {
     background-color: rgba(0, 0, 0, 0.767);
-    height: 550px;
-    width: 50vw;
+    width: 90vw;
+    max-width: 600px;
+    padding: 1%;
+    border-radius: 5%;
     margin-top: 5px;
-    /* margin-bottom: 17px; */
-    padding-right: 6%;
-    padding-left: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
 }
 
-.cuadro2{
-    margin: 2vw ;
-    width: 8vw !important;
-    height: 8vh;
-    border: 1px solid #8a2be2;
-    border-radius: 10px;
-    background-color: #8a2be2  ;
-    font-family:  arial black ;
+.JuegoImagen1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 7%;
+    margin-top: 15%;
+    transition: transform 0.3s;
+}
+
+.JuegoImagen1 img:hover {
+    transform: scale(1.05);
+}
+
+.text-center {
     text-align: center;
 }
 
-h4{
-    margin-top: 20px !important;
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
 }
 
-@media (max-width:995px){
-    .capa{
-        width: 100%;
-    }
-    .cuadro2{
-        width: 40px;
-        height: 60px;
-        margin: 4%;
-    }
+.btn:hover {
+    background-color: #0056b3;
+}
+.opcion1 {
+    transition: all 0.3s ease; 
 }
 
-@media (max-width:400px){
-    .capa{
-        width: 900px;
+.seleccionada {
+    border: 3px solid green; 
+}
+@media (max-width: 767px) {
+    .avatar img, .logo img {
+        width: 100%; 
+        max-width: none;
     }
-    .cuadro2{
-        width: 20px;
-        height: 20px;
-        margin: 3%;
-        padding: 0;
-        h4{
-            font-size: 10px;
-        }
+    .avatar img{
+        margin-left: -500%;
     }
-
     .logo img{
-        margin-left: 20%;
-        width: 10px;
-        height: 10px;
+    margin-left: 160%;
+    margin-top: -440%;
     }
 
-    .centrar{
-        margin-top: 22%;
+    .letra p {
+        font-size: 2rem; 
     }
 
-}
-
-@media (max-width:1400px){
-    .capa{
-        width: 70%;
+    .capa {
+        width: 95vw;
     }
-    .cuadro2{
-        width: 40px;
-        height: 60px;
-        margin: 3%;
+
+    .JuegoImagen1 img {
+        width: 60%; 
     }
 }
-
-@media (max-width:767px){
-    .capa{
-        width: 70%;
-    }
-    .cuadro2{
-        width: 40px;
-        height: 60px;
-        margin: 1%;
-    }
-}
-
-.centrar{
-    margin-top: 22%;
-}
-
-.boton{
-    margin-left: 40%;
-}
-
-

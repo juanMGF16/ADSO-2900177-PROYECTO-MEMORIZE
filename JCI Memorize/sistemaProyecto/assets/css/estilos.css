@@ -1,14 +1,15 @@
-:root{
+:root {
     --btn-primary: #8a2be2;
 }
-body{
+
+body {
     background-image: url(../img/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 h2{
-    color: #8a2be2;
+    color: #fff;
 }
 a{
     color: blueviolet;

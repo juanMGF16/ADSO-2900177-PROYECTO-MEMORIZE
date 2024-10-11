@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar Palabras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/juego.css">
+   
+</head>
+<body>
+    <div class="hero">
+        <div class="container ">
+            <!-- Título principal -->
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h5>Ordena las Palabras</h5>
+                </div>
+            </div>
+    
+            <!-- Sección de ingreso de palabras -->
+            <div id="input-section" class="card p-4 mb-4 shadow-sm">
+                <form id="word-form">
+                    <div class="form-group row">
+                        <div class="col-12 col-md-8 offset-md-2">
+                            <label for="word-input">Ingresa las palabras o números <br> (separadas por comas):</label>
+                            <input type="text" class="form-control" id="word-input" placeholder="Palabra 1, Palabra 2, ...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-dark">Guardar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    
+            <!-- Sección para iniciar juego -->
+            <div id="start-game-section" class="card p-4 mb-4 shadow-sm hidden">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button id="start-game-button" class="btn btn-dark">Iniciar Juego</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Sección para mostrar el patrón de palabras aleatorias -->
+            <div id="original-display" class="card p-4 mb-4 shadow-sm hidden">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3 class="card-title">Recuerda el siguiente Orden</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Lista vertical de palabras -->
+                        <ul id="original-word-list" class="sortable-list"></ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div id="timer"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Sección para reorganizar las palabras -->
+            <div id="reorder-section" class="card p-4 mb-4 shadow-sm hidden">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3 class="card-title">Reorganiza</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Lista vertical de palabras reorganizables -->
+                        <ul id="sortable-list" class="sortable-list"></ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Botón para rectificar el orden -->
+            <div id="rectify-section" class="text-center mb-4 hidden">
+                <div class="row">
+                    <div class="col-12">
+                        <button id="rectify-button" class="btn btn-dark">Verificar</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Mensaje de resultado -->
+            <div id="result-message" class="alert alert-info text-center hidden mb-4"></div>
+    
+            <!-- Botón para reiniciar el juego -->
+            <div id="restart-section" class="text-center mb-4 hidden">
+                <div class="row">
+                    <div class="col-12">
+                        <button id="restart-button" class="btn btn-dark">Volver a Jugar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+    <script src="../../assets/js/libre.js"></script>
+</body>
+</html>
+
