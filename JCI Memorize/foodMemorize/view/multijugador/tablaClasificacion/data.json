@@ -1,0 +1,8 @@
+[
+    { "id": 1, "nombre": "Usuario1", "puntaje": 1200, "perfil": "./img/perfilElefante.jpg" },
+    { "id": 2, "nombre": "Usuario2", "puntaje": 950, "perfil": "./img/perfil.jpg" },
+    { "id": 3, "nombre": "Usuario3", "puntaje": 800, "perfil": "./img/perfil.jpg" },
+    { "id": 4, "nombre": "Usuario4", "puntaje": 720, "perfil": "./img/perfil.jpg" }
+  ]
+  
+  

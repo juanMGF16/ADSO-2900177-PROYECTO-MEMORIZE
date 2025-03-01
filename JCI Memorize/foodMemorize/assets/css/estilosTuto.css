@@ -1,0 +1,55 @@
+.modal1 img{
+    width: 70px;
+    height: 70px;
+}
+.button{
+    float: right
+}
+
+.imagen-centro {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img-fluid {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.imagen-contenedor {
+    display: flex;
+    justify-content: center; /* Centra el grupo de imágenes en el contenedor */
+    gap: 6px; /* Espacio entre las imágenes */
+}
+
+.img {
+    max-width: 80px; /* Ajusta el tamaño de las imágenes según necesites */
+    height: auto;
+    border-radius: 15px;
+}
+.modal-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+.modal-icon1 {
+    width: 70px;
+    height: 55px;
+    margin-right: 10px;
+}
+.custom-modal {
+    border: 3px solid #ff8800; /* Borde azul */
+    animation: moveModal 1s ease-in-out; /* Animación para el movimiento */
+}
+
+/* Definir la animación de movimiento */
+@keyframes moveModal {
+    0% {
+        transform: translateY(-100%); /* Empieza fuera de la pantalla arriba */
+    }
+    100% {
+        transform: translateY(0); /* Llega a su posición original */
+    }
+}

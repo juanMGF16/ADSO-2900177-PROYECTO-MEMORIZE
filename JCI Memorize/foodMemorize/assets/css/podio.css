@@ -1,0 +1,206 @@
+/* Estilo general */
+body {
+    background-image: url(../img/fondo\(4\).jpg);
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.capa {
+    background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 15px;
+    animation: borderAnimation 3s infinite linear; 
+    border: 4px solid transparent;
+    width: 836px; /* Ancho inicial para pantallas grandes */
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #ff7b00; /* Rosa */
+    }
+    50% {
+        border-color: #ff7b00; /* Morado */
+    }
+    100% {
+        border-color: #ff6600; /* Rosa */
+    }
+}
+
+.titulo-container {
+    align-items: center; /* Centra verticalmente los elementos */
+    display: flex;
+    justify-content: center; /* Espacio entre los botones y el título */
+    position: relative; /* Para posicionar los botones */
+    margin-bottom: 10px;
+}
+
+
+/* Asegúrate de que la tabla no se vea afectada por los botones */
+.tabla-container {
+    width: 100%; /* Mantiene la tabla ocupando todo el ancho disponible */
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto; /* Centrado */
+    padding: 5px; /* Espaciado */
+}
+
+/* Podio */
+.podio-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.podio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.podio-item {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.podio-item img.perfil {
+    height: 70px;
+    border-radius: 50%;
+}
+
+.podio-item .puesto {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.podio-item .nombre {
+    font-size: 1.2em;
+}
+
+.podio-item .puntaje {
+    font-size: 1em;
+}
+
+/* Diseño específico de los lugares */
+.podio-item#primer-lugar {
+    order: 0;
+    background-color: gold;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.podio-item#segundo-lugar {
+    order: 1;
+    background-color: silver;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.podio-item#tercer-lugar {
+    order: 2;
+    background-color: #cd7f32; /* Bronce */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Tabla de clasificación */
+.tabla-container {
+    width: 100%;
+}
+
+.tabla-clasificacion {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+.tabla-clasificacion th, .tabla-clasificacion td {
+    text-align: center;
+    border: 1px solid #db6124;
+}
+
+.tabla-clasificacion th {
+    padding: 10px;
+    background-color: #db6124;
+    color: white;
+}
+
+.tabla-clasificacion tr:nth-child(even) {
+    background-color: #db6124e3;
+}
+
+.tabla-clasificacion img {
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+    .capa {
+        width: 100%; /* Ajusta el ancho en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo-container {
+        flex-direction: column; /* Cambia a columna en móviles */
+        align-items: center; /* Centra los elementos */
+        padding: 5px 45px;
+    }
+    .tabla-container h1 {
+        margin: 5px 0; /* Margen vertical */
+        font-size: 1.6em; /* Ajusta el tamaño de fuente */
+    }
+    .titulo-container h1 {
+        margin: 5px 0; /* Margen vertical */
+        font-size: 1.2em; /* Ajusta el tamaño de fuente */
+    }
+
+    .podio {
+        justify-content: space-around; /* Mantiene la disposición horizontal en móviles */
+        overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+        
+    }
+    .podio-item {
+        max-height: 94px;
+        max-width: 90px; /* Ajusta el ancho máximo para móviles */
+        min-width: 30px; /* Ancho mínimo para mantener visibilidad */
+        flex: 1; /* Asegura que todos los podios tengan el mismo ancho en móviles */
+    }
+    
+    .tabla-clasificacion th, .tabla-clasificacion td {
+        padding: 2px; /* Reduce padding en pantallas pequeñas */
+    }
+}
+
+.boton-menu button {
+    background-color: #db6124e3; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.boton-menu button:hover {
+    background-color: #db6124f7; /* Verde más oscuro al pasar el cursor */
+}
+
+
+  
+  
+  

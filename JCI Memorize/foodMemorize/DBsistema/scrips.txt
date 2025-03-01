@@ -1,0 +1,35 @@
+CREATE TABLE  persona (
+    "personaId" SERIAL PRIMARY KEY,             
+    "nombrePersona" VARCHAR(100) NOT NULL,      
+    "edadPersona" INT,                          
+    "personaCorreo" VARCHAR(150) UNIQUE NOT NULL, 
+    "personaPassword" VARCHAR(255) NOT NULL,    
+    reset_token VARCHAR(255),                 
+    token_expiration TIMESTAMP                
+);
+CREATE TABLE progreso_usuario (
+    id SERIAL,
+    persona_id INT,
+    nivel INT NOT NULL,
+    nivel_desbloqueado INT DEFAULT 1,
+    fecha_ultima_actualizacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY(id),
+	FOREIGN KEY(persona_id) REFERENCES persona("personaId")
+);
+
+CREATE TABLE progreso_usuario_visual (
+    id SERIAL,
+    persona_id INT,
+    nivel INT NOT NULL,
+    nivel_desbloqueado INT DEFAULT 1,
+    fecha_ultima_actualizacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY(id),
+	FOREIGN KEY(persona_id) REFERENCES persona("personaId")
+);
+CREATE TABLE puntajes (
+    puntajeId SERIAL PRIMARY KEY,
+    "personaId" INT REFERENCES persona("personaId") ON DELETE CASCADE,  -- Relación con la tabla persona
+    puntaje INT NOT NULL,              -- Puntaje del usuario
+    fechaRegistro TIMESTAMP DEFAULT CURRENT_TIMESTAMP  -- Fecha en la que se registra el puntaje
+);
+

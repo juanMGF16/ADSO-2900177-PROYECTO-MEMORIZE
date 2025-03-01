@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Food Memorize</title>
+  <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/log.css">
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="restaurant-card">
+      <h1 class="card-title text-center">Carta de Registro</h1>
+      <p class="text-center subtitle">¡Únete a Food Memorize!</p>
+      <form id="registroForm">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="txtnombres" name="txtnombres" placeholder="Tu nombre" pattern="[a-zA-Z\s]+" required>
+        </div>
+        <div class="mb-3">
+          <label for="edad" class="form-label">Edad</label>
+          <input type="number" class="form-control" id="txtEdad" name="txtEdad" placeholder="Tu edad" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="txtemail" name="txtemail" placeholder="ejemplo@correo.com"  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="txtpassword" name="txtpassword" placeholder="Tu contraseña" required>
+        </div>
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-primary" onclick="registrarUsuario()">Registrarse</button>
+        </div>
+      </form>
+      <div class="text-center mt-3">
+        <a href="login.html">¿Ya tienes cuenta? Inicia sesión aquí</a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../sweetalert2/sweetalert2.all.min.js"></script>
+  <script src="../assets/js/operador.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,171 @@
+.modal1 img{
+    width: 70px;
+    height: 70px;
+}
+.button{
+    float: right
+}
+
+.imagen-centro {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img-fluid {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.img-fluids {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.imgs{
+    max-width: 75%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.imagen-contenedor {
+    display: flex;
+    justify-content: center; /* Centra el grupo de imágenes en el contenedor */
+    gap: 6px; /* Espacio entre las imágenes */
+}
+
+.img {
+    max-width: 80px; /* Ajusta el tamaño de las imágenes según necesites */
+    height: auto;
+    border-radius: 15px;
+}
+
+.modal-icon1 {
+    width: 70px;
+    height: 55px;
+    margin-right: 30px;
+}
+.custom-modal {
+    border: 3px solid #ff8800; /* Borde azul */
+    animation: moveModal 1s ease-in-out; /* Animación para el movimiento */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+
+}
+
+/* Definir la animación de movimiento */
+@keyframes moveModal {
+    0% {
+        transform: translateY(-100%); /* Empieza fuera de la pantalla arriba */
+    }
+    100% {
+        transform: translateY(0); /* Llega a su posición original */
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-header .d-flex {
+        justify-content: center;
+    }
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e0c7; /* Suave color de fondo que evoca la calidez de una cocina */
+    color: #5d4037; /* Café oscuro para el texto */
+}
+
+/* Estilización de los modales */
+.modal-content.custom-modal {
+    background-color: #ffedd5; /* Naranja claro */
+    border: 2px solid #d18b47; /* Bordes en un tono más fuerte */
+    border-radius: 15px;
+    
+}
+
+.modal-header {
+    background-color: #d18b47;
+    color: #fff;
+    border-bottom: 2px solid #c67c3c;
+}
+
+.btnT-close {
+    background-color: #f3d19d; /* Botón de cierre suave */
+    color: #5d4037;
+}
+
+h5.modal-title {
+    font-weight: bold;
+}
+
+/* Botones y elementos de interacción */
+.btnT-primary {
+    background-color: #e07b39 !important; /* Naranja oscuro */
+    border: none;
+    border-radius: 8px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 7px;
+}
+
+.btnT-primary:hover {
+    background-color: #d2691e; /* Naranja más profundo */
+}
+
+/* Íconos e imágenes */
+.modal-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.imagen-centro img {
+    border: 3px solid #d18b47;
+    border-radius: 10px;
+}
+
+.imagen-contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.imagen img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #b45f3f;
+    transition: transform 0.3s;
+}
+
+.imagen img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilización de enlaces */
+.modal1 img {
+    width: 60px;
+    height: auto;
+    border: 2px solid #e07b39;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.modal1 img:hover {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+.icono-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff9900, #8b4513);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 10px;
+}

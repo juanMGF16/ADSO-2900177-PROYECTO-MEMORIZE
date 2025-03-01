@@ -1,0 +1,96 @@
+body {
+    background-image: url(../img/fondos/fondo\(1\).webp);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.oculto {
+    display: none;
+}
+.logoNiveles img {
+    width: 60%;
+    height: auto;
+    margin-left: -60%; /* Centrar el logo */
+}
+.row.align-items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: auto; /* Ajustar la altura automáticamente */
+}
+
+/* Botones */
+button {
+    background-color: #c79f4e !important;
+    font-family: 'Arial Black', sans-serif !important;
+    border-color: #c79f4e !important;
+    width: 100%; /* Botones ocuparán el 100% de su contenedor */
+    height: 100px;
+    margin: 2% !important; /* Espacio alrededor de los botones */
+    border-radius: 15px !important;
+    font-size: 1.5rem; /* Aumentar el tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+button:hover {
+    background-color: #b58a3c !important; /* Color de fondo al pasar el ratón */
+}
+
+.candado img {
+    width: 80px; 
+    height: auto;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor interno con bordes */
+.capa {
+    background-color: rgba(255, 255, 255, 0.482);
+    width: 90vw; /* Ajustar para dispositivos móviles */
+    max-width: 700px; 
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid #c79f4e;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    body{
+        overflow: scroll;
+    }
+    .letra p {
+        font-size: 1.5rem; /* Ajustar el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    button {
+        height: 80px; /* Ajustar la altura de los botones */
+    }
+}
+
+@media (max-width: 576px) {
+    .letra p {
+        font-size: 1.2rem; /* Ajustar el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    button {
+        height: 60px; /* Ajustar la altura de los botones */
+    }
+}

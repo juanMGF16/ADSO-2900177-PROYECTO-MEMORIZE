@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del Restaurante</title>
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/hom.css">
+    <link rel="stylesheet" href="../assets/css/estilosTutorial.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <div class="restaurant-menu card mx-auto p-3">
+            <div class="menu-header d-flex flex-md-row justify-content-between align-items-center">
+                <div class="menu-icon">
+                    <img src="../assets/img/COMIC__2_-removebg-preview.png" alt="Perfil" class="icon">
+                </div>
+                <h1 class="menu-title">Menú del Restaurante</h1>
+                <div class="dropdown">
+                    <div class="menu-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../assets/img/tutorial/boton_de_ajuste-removebg-preview.png" alt="Configuración"
+                            class="lineas" style="cursor: pointer; width: 50px;">
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            <button class="btn btn-primary menu-opciones mb-3"
+                                onclick="window.location.href='../assets/lib/persona/cerrarSesion.php'">
+                                <img class="image imagenBoton" src="../assets/img/cerrar_sesion.png" />
+                                <span class="text">Cerrar sesión</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary menu-opciones mb-3">
+                                <img class="image imagenBoton" src="../assets/img/borrarCuenta.png" />
+                                <span class="text">Borrar cuenta</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary menu-opciones mb-3"
+                                onclick="window.location.href='./perfil_1'">
+                                <img class="image imagenBoton" src="../assets/img/perfil.png" />
+                                <span class="text">Perfil Usuario</span>
+                            </button>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-content mt-2">
+                <h2>¡Bienvenido, <samp id="nombreUsuario"></samp>!</h2>
+
+                <!-- Contenedor de dos columnas -->
+                <div class="row align-items-center justify-content-center">
+                    <!-- Menú de opciones (columna izquierda) -->
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                        <ul class="menu-list list-unstyled text-center">
+                            <li>
+                                <a href="./categorias/solitario/index.html">
+                                    <button class="btn btn-primary menu-btn mb-2">Jugar Solo
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./multijugador/index.html">
+                                    <button class="btn btn-primary menu-btn mb-2">Multijugador
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <button class="btn btn-primary menu-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModalToggle2">
+                                    Tutorial
+                                </button>
+                            </li>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content custom-modal">
+                                        <div class="modal-header d-flex justify-content-center">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel">Juego de visualizar
+                                            </h5>
+                                            <button type="button" class="btn-close position-absolute end-0 me-2"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Se le va a mostrar una imagen con un tiempo determinado.</p>
+                                            <div class="imagen-centro">
+                                                <img src="../assets/img/tutorial/nivel(4).webp"
+                                                    alt="Descripción de la imagen" class="img-fluid">
+                                            </div>
+                                            <p>aparecerán tres imágenes, y tendrás que recordar cuál es la correcta.</p>
+                                            <div class="imagen-contenedor">
+                                                <div class="imagen">
+                                                    <img src="../assets/img/tutorial/nivel(4).webp"
+                                                        alt="Descripción de la imagen" class="img">
+                                                </div>
+                                                <div class="imagen">
+                                                    <img src="../assets/img/tutorial/nivel(4.1).png"
+                                                        alt="Descripción de la imagen" class="img">
+                                                </div>
+                                                <!-- <div class="imagen">
+                                                    <img src="../assets/img/tutorial/nivel(4.2).png"
+                                                        alt="Descripción de la imagen" class="img">
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btnT-primary  mb-2" data-bs-target="#exampleModalToggle3"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Siguiente</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content custom-modal">
+                                        <div class="modal-header d-flex justify-content-center">
+                                            <h5 class="modal-title" id="exampleModalToggleLabe3">Juego de interactuar
+                                            </h5>
+                                            <button type="button" class="btnT-close position-absolute end-0 me-1"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Se le mostrara un mune principal donde tendras que recordar el orden de
+                                                los ingredientes.</p>
+                                            <div class="imagen-centro">
+                                                <img src="../assets/img/tutorial/Screenshot_1.png"
+                                                    alt="Descripción de la imagen" class="img-fluids">
+                                            </div>
+                                            <p>aparecera un orden incorrecto el cual tendras que organizarlo al menu que
+                                                memorizaste .</p>
+                                            <div class="imagen-contenedor">
+                                                <img src="../assets/img/tutorial/Screenshot_4.png"
+                                                    alt="Descripción de la imagen" class="imgs">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class=" btnT-primary mb-2" data-bs-target="#exampleModalToggle"
+                                                data-bs-toggle="modal" data-bs-dismiss="modal">Siguiente</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <!-- Imagen del personaje "Cui" (columna derecha) -->
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="../assets/img/leon-removebg-preview.png" alt="Cui Personaje"
+                            class="img-fluid cui-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/operador.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="./chat/chat.js"></script> -->
+
+</body>
+
+</html>

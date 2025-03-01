@@ -1,0 +1,166 @@
+body {
+    background-image: url(../img/fondoHome.jpg);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* overflow: hidden; */
+}
+.alerta{
+    border: 4px solid #d6ad5c;
+  }
+  .custom-button{
+    background-color: #c79f4e
+  }
+.ingredient-container, .drop-zone-container {
+    padding: 15px;
+    border: 3px dashed #D69E2E; /* color cálido */
+    border-radius: 10px;
+    background-color: #FFF5D7; /* color de fondo suave */
+    min-height: 120px;
+}
+
+/* Estilos de ingredientes individuales */
+.ingredient {
+    cursor: grab;
+    padding: 5px;
+    margin-bottom: 3px;
+    border: 2px solid #F0C27B; /* borde suave */
+    border-radius: 8px;
+    background-color: #FFFBF2; /* color de fondo claro */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient img {
+    width: 60px;
+    height: 45px;
+    object-fit: cover;
+}
+
+/* Estilos de zona de orden */
+.drop-zone {
+    height: 60px;
+    /* padding: 5px; */
+    /* border: 3px dashed #D69E2E;  */
+    border-radius: 10px;
+    background-color: #FFF5D7; /* color de fondo suave */
+    margin-bottom: 3px;
+    /* max-width: 200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.ingredient div {
+    display: none;
+}
+.highlight {
+    border: 2px dashed #ff9800; /* Color de borde para resaltar */
+    background-color: #fff3e0;   /* Fondo para resaltar */
+}
+
+.drop-zone:hover {
+    background-color: #FFE8B5; /* color más claro al pasar el cursor */
+}
+
+/* Botón de validar orden */
+.validate-btn {
+    background-color: #4CAF50;
+    color: #FFF;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.validate-btn:hover {
+    background-color: #45A049;
+    transform: scale(1.05);
+}
+
+/* Botones de nivel */
+.level-btn {
+    background-color: #FFB74D; /* color de fondo cálido */
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.2s ease;
+    margin: 5px;
+}
+
+.level-btn:hover {
+    background-color: #FFA233; /* color más oscuro al pasar el cursor */
+    transform: scale(1.05);
+}
+
+/* Clase oculto para esconder elementos */
+.oculto {
+    display: none !important;
+}
+
+h2, h5{
+    color: #040404;
+}
+
+/* .imagen img{
+    width: 200px;
+} */
+
+.level-btn {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.level-btn.btn-secondary {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-logo {
+    max-width: 90px;
+    transition: transform 0.3s ease;
+}
+
+.game-logo:hover {
+    transform: scale(1.1);
+}
+
+.back-home-icon {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.back-home-icon:hover {
+    transform: scale(1.1);
+}
+.overlay {
+    background-color: rgba(255, 255, 255, 0.889); 
+    border-radius: 20px;
+    max-width: 800px;
+    padding: 15px;
+}
+@media (max-width: 900px) {
+    .overlay {
+        max-width: 350px;
+    }
+}

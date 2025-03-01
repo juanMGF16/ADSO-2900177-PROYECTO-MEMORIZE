@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niveles del Juego</title>
+    <link rel="stylesheet" href="../../../../assets/css/estilosNiveles.css" />
+    <link rel="stylesheet" href="../../../../assets/bootstrap/css/bootstrap.css" />
+    <script src="../../../../assets/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../../../../assets/css/estilos3.css" />
+    <link rel="stylesheet" href="../../../../assets/css/estilosNiv.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="padreNiv">
+            <div class="capaNiv">
+
+                <div class="row total mb-4 oculto" id="hiddenMenu">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3 d-flex justify-content-center">
+                                <div class="salida posicion">
+                                    <a href="../../../home.html">
+                                        <img src="../../../../assets/img/botones/salida.png" class="img-fluid"
+                                            alt="Logo Usuario" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex justify-content-center align-items-center">
+                                <div class="letra">
+                                    <p id="texto-nivel">Observa la siguiente imagen</p>
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex justify-content-center">
+                                <div class="avatarImg posicion">
+                                    <img src="../../../../assets/img/logo/logoM.png" class="img-fluid"
+                                        alt="Nuevo Logo" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección para mostrar la imagen inicial -->
+
+                <!-- Contenedor para la imagen principal del nivel -->
+                <div class="row JuegoImagen mb-4 oculto" id="hiddenImage">
+                    <div class="col-12 imagenes text-center">
+                        <img src="" alt="Imagendelplato" id="nivelImagenPrincipal" />
+                    </div>
+                </div>
+
+
+
+                <div class="m-auto oculto" id="containere">
+                    <div id="loading-bar1" class="loading-bar2"></div>
+                </div>
+
+                <!-- seleccionar (oculto inicialmente) -->
+                <div class="row mb-4 oculto" id="selectionMenu">
+                    <div class="col col-md-3 d-flex justify-content-center align-items-center">
+                        <div class="logo">
+                            <a href="../../../home.html">
+                                <img id="avatarImage" src="../../../../assets/img/botones/salida.png" alt="Logo Usuario"
+                                    class="img-fluid" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="letra">
+                            <p id="headerText">Selecciona la opción que creas correcta</p>
+                        </div>
+                    </div>
+                    <div class="col col-md-3 d-flex justify-content-center align-items-center">
+                        <div class="avatar">
+                            <img id="avatarImage" src="../../../../assets/img/logo/logoM.png" alt="Logo Usuario"
+                                class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Opciones de juego -->
+                <div class="row JuegoImagen1 opcion1 estilosImg mb-4 text-center oculto" id="gameOptions">
+                    <!-- Aquí se cargarán dinámicamente las opciones de ingredientes -->
+                </div>
+
+                <!-- Botón de validación (oculto inicialmente) -->
+                <div class="text-center oculto" id="validateButton">
+                    <button id="validarBtn" class="btn btn-primary buttonPatron" onclick="validarOpcionUno()">Validar
+                        Opción</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../../../../assets/bootstrap/js/bootstrap.js"></script>
+<script src="../../../../sweetalert2/sweetalert2.all.min.js"></script>
+<script src="../../../../assets/js/multi.js"></script>
+
+</html>

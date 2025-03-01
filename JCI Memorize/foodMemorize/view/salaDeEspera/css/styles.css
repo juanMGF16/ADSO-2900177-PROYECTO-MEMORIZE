@@ -1,0 +1,132 @@
+body{
+    font-family: 'Open Sans' , sans-serif;
+    background-image: url(../img/fondo\(4\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow-y: hidden;
+    min-height: 100vh;
+}
+
+
+
+@keyframes moveLogoVertical {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}
+.capa{
+    background-color: rgba(255, 255, 255, 0.589);
+    /*width: 55%;
+    height: 60%;
+    position: absolute;
+    top: 16%; 
+    left: 23%;
+    justify-content: center;
+    align-items: center;*/
+    border-radius: 15px;
+    animation: borderAnimation 3s infinite linear; 
+    border: 4px solid transparent;
+    width:1300px;
+    height: 448px;
+}
+
+
+.containerCategoria{
+    justify-content: center;
+    align-items: center;
+}
+/*.text{
+    color: rgb(0, 0, 0);
+    margin-bottom: 23px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 34px;
+}*/
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #ff7b00; /* Rosa */
+    }
+    50% {
+        border-color: #ff7b00; /* Morado */
+    }
+    100% {
+        border-color: #ff6600; /* Rosa */
+    }
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+}
+
+.casa2 img{
+    height: 90px;
+    width: 90px;
+   /* position: absolute;
+    top: 17%;
+    left: 25%;*/
+    margin-bottom: auto;
+    animation: moveLogoVertical 2s infinite alternate ease-in-out;
+}
+.casa1 img{
+    height: 90px;
+    width: 90px;
+    margin-bottom: auto;
+    float: right;
+    animation: moveLogoVertical 2s infinite alternate ease-in-out;
+    /*position: absolute;
+    top: 80%;
+    left: 4%;*/
+   
+}
+.campo{
+    /*height: 40px;
+    width: 219px;
+    border: 1px rgb(241, 225, 235) solid;
+    border-radius: 8px;
+    background-color: rgb(255, 254, 255);
+    position:absolute;
+    bottom:160px;
+    right: 257px;*/
+    border: 4px solid transparent; 
+    border: 1px rgb(245, 218, 194) solid;
+    border-radius: 8%;
+    background-color: rgb(252, 227, 195);
+    animation: borderAnimation 3s infinite linear;
+}
+
+.botonMenu {
+    height: 10px;
+    width: auto;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+.campo1{
+    /*height: 50px;
+    width: 259px;
+    border: 1px rgb(99, 13, 66) solid;
+    border-radius: 8px;
+    background-color: rgba(124, 22, 92);
+    position:absolute;
+    bottom:90px;
+    right:237px;*/
+    border: 4px solid transparent; 
+    border: 1px rgb(247, 126, 13) solid;
+    border-radius: 8%;
+    background-color: rgb(250, 145, 8);
+    animation: borderAnimation 3s infinite linear;
+}
+
+.text{
+    font-family: 'Times New Roman', Times, serif;
+}
+.botonMenu {
+    background-color: transparent;
+    border: none;
+  }
+  

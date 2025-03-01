@@ -1,0 +1,132 @@
+.primer {
+    background: url('../img/fon.png') no-repeat center center fixed; /* Fondo de pantalla */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.home{
+    background: url('../img/fondoHome.jpg') no-repeat center center fixed; /* Fondo de pantalla */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+
+}
+/* Animación del cui al saludar */
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Cuando el cui está activo (cursor encima), saluda */
+.cui:hover img {
+    animation: wave 1.5s ease-in-out infinite;
+    cursor: pointer;
+}
+
+/* Deshabilitar la animación en dispositivos táctiles */
+@media (hover: none) {
+    .cui:hover img {
+        animation: none; /* Desactiva la animación de saludo */
+    }
+}
+
+/* Estilo de la burbuja de habla */
+.speech-bubble {
+    position: absolute;
+    top: 60px; /* Coloca la burbuja justo encima del cui */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9dc;
+    border: 3px solid #c79f4e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+}
+
+/* Flecha de la burbuja hacia abajo */
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Colocarla debajo de la burbuja */
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f9f9f9a1 transparent transparent transparent;
+}
+
+.speech-bubble h2 {
+    color: #d96c06;
+}
+.btn{
+    background-color: #d96c06;
+}
+.btn:hover {
+    background-color: #c79f4e !important;
+    transform: scale(1.2);
+    border-color: var(--bs-btn-hover-border-color);
+}
+.speech-bubble .btn {
+    width: 80%;
+}
+
+#cui {
+    position: absolute;
+    bottom: 0; /* Lo coloca en el suelo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Ajustar el tamaño del cui */
+    z-index: 120; /* Asegura que quede por encima de otros elementos */
+}
+
+/* Ocultar burbuja por defecto */
+#welcome-sign {
+    display: none;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mantener el cui centrado sin moverse en móviles */
+@media (max-width: 768px) {
+    .cui img {
+        max-width: 100px; /* Ajustamos el tamaño en pantallas pequeñas */
+    }
+}
+
+/* Asegurarnos de que el cartel no se corte */
+.speech-bubble {
+    max-width: 90%; /* Ajuste para móviles, que no ocupe todo el ancho */
+    margin: 0 auto; /* Centrarla en móviles */
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .speech-bubble {
+        margin-top: 230px !important; /* Baja el cartel en móviles */
+        max-width: 90%; /* Ajuste para que no ocupe todo el ancho */
+    }
+
+    .container {
+        margin-top: 20px; /* Ajusta la posición general del contenido */
+    }
+
+    .cui img {
+        max-width: 100px; /* Ajusta el tamaño del cui */
+    }
+}
+.chef-container {
+    position: relative;
+    display: inline-block;
+}

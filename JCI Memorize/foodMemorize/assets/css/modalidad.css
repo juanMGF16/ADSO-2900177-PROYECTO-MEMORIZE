@@ -1,0 +1,133 @@
+body {
+    background-image: url(../img/fondoHome.jpg);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.solo-mode-container {
+    background-color: #ffffffcb;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    border: 2px solid #c47c48;
+    max-height: 90vh;
+}
+
+/* Animación de entrada suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos de los botones y logo */
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-logo {
+    max-width: 90px;
+    transition: transform 0.3s ease;
+}
+
+.game-logo:hover {
+    transform: scale(1.1);
+}
+
+.back-home-icon {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.back-home-icon:hover {
+    transform: scale(1.1);
+}
+
+.solo-btn {
+    background-color: #d6ad5c;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 180px;
+    margin: 10px auto;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.solo-btn:hover {
+    background-color: #d77a4b;
+    transform: translateY(-3px);
+}
+
+.solo-btn:active {
+    transform: translateY(0);
+}
+
+.back-home-btn {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.solo-options {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.option-img {
+    max-width: 120px;
+    height: 90px;
+    transition: transform 0.3s ease;
+    border-radius: 25px;
+}
+
+.option-img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .solo-mode-container {
+        padding: 20px;
+        max-width: 400px;
+    }
+
+    .game-logo {
+        max-width: 70px;
+    }
+
+    .back-home-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .solo-btn {
+        width: 150px;
+        font-size: 0.9rem;
+    }
+
+    .option-img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .solo-mode-container {
+        max-width: 320px;
+    }
+}
